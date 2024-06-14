@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Tenure Selection</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/loan.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="session-info">
+            <span id="username"></span>
+            <button id="logout" class="btn btn-danger">Logout</button>
+        </div>
+        <h1>Loan Tenure Selection</h1>
+        <p>Loan Amount: <span id="loanAmount"></span> Rs.</p>
+        <p>Interest Rate: 14%</p>
+        <form id="tenureForm">
+            <div class="form-group">
+                <label for="tenure">Select Tenure</label>
+                <select class="form-control" id="tenure" name="tenure" required></select>
+            </div>
+            <div id="emi"></div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

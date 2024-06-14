@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Details</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/address.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Address Details</h1>
+        <form id="addressForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" readonly>
+            </div>
+            <div class="form-group">
+                <label for="address1">Address Line 1</label>
+                <input type="text" class="form-control" id="address1" name="address1" required>
+            </div>
+            <div class="form-group">
+                <label for="address2">Address Line 2(Optional)</label>
+                <input type="text" class="form-control" id="address2" name="address2">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State/Province</label>
+                <input type="text" class="form-control" id="state" name="state" required>
+            </div>
+            <div class="form-group">
+                <label for="zip">Zip/Postal Code</label>
+                <input type="text" class="form-control" id="zip" name="zip" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country" name="country" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Next</button>
+        </form>
+    </div>
+</body>
+</html>

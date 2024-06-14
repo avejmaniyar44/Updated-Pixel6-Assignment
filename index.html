@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <h1>LOAN APPLICATION FORM</h1>
+    <!-- form for event handling -->
+    <form id="form">
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="John Snow">
+            <div id="fullNameError" class="error"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="john@gmail.com">
+            <div id="emailError" class="error"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="pan">PAN</label>
+            <input type="text" id="pan" name="pan" placeholder="ABCDE1234F">
+            <div id="panError" class="error"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="loanAmount">Loan Amount</label>
+            <input type="text" id="loanAmount" name="loanAmount">
+            <div id="loanAmountError" class="error"></div>
+            <div id="amountInWords"></div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="./js/form.js"></script>
+</body>
+</html>
